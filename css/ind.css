@@ -1,0 +1,200 @@
+/*Kiran Aryal 17421495*/
+body{
+  margin:0; background-color: #FEF9BD;
+}
+
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+  }
+
+.container{
+  margin: 0 15%;
+}
+
+header{
+  padding: 1%; background-color: #FAFBFC;
+}
+
+.navbar ul li a{
+  text-decoration:none;
+}
+
+li{
+  list-style:none; letter-spacing: 2px;
+  display:block;
+  font-family: 'Orbitron', sans-serif;
+
+}
+
+.logo{
+  position:absolute;
+  margin-top: 0.5%;
+  padding: 0.5%;
+}
+
+.logo:hover{
+  zoom:105%;
+
+}
+
+.mainhead{
+  margin-left: 8%;
+  margin-top:0.5%;
+  padding:1%;
+  width: 50%;
+}
+
+.mainhead h2{
+  letter-spacing: 6px; font-size: 3em;
+  font-family: 'Orbitron', sans-serif;
+
+
+}
+
+.mainhead h4{
+letter-spacing: 7px;
+font-family: 'Josefin Slab', serif;
+
+}
+
+
+.navbar{
+  width:50%;
+  margin-left: 50%;
+}
+
+ul{
+  display:flex; flex-direction:row; justify-content: space-between;
+  background-color: #FAFBFC;
+
+}
+
+ul li:hover{
+  transform: rotate(-10deg); /*When user hovers to items eg. C.V., Bio. etc, it rotates anti-clockwise 10degree*/
+  zoom:102%;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px gray;
+
+}
+
+a{
+color:black;
+}
+
+a:active {
+    color: #989898;
+}
+
+
+
+section{
+  background: radial-gradient(#cccccc, #b2b2b2); padding:1%;
+
+}
+
+section .indcont{
+  height:500px;
+}
+
+.minepic{
+text-align: center ;
+margin-top: 3%;
+}
+
+.minepic:hover{
+  ;
+
+}
+
+.sechead{
+text-align: center;
+}
+
+.sechead h1{
+  letter-spacing: 18px; margin-top: 1%;
+  font-family: 'Josefin Slab', serif;
+}
+
+.sechead p{
+  text-align: center;
+  margin-top: 0.5%;
+  font-family: 'Dancing Script', cursive
+
+}
+
+footer{
+  display:flex; flex-direction:row; justify-content: space-between;
+  background: linear-gradient(#cccccc, #FAFBFC); padding:2%;
+
+
+}
+
+.Call{
+  display: flex;
+}
+.Call div:first-child{width: 20%;}
+.Call div:last-child{width:80%;}
+
+
+.Call h4
+{
+font-family: 'Orbitron', sans-serif;
+}
+
+.Call p{
+font-family: 'Macondo', cursive;
+}
+
+footer div{width: 33%;}
+
+.Contact{
+ display:flex;
+ }
+ .Contact div:first-child{width: 20%;}
+ .Contact div:last-child{width: 80%;}
+
+.Contact h4
+{
+font-family: 'Orbitron', sans-serif;
+}
+
+.Contact p{
+font-family: 'Macondo', cursive;
+}
+
+
+.Copyright{
+  display:flex;
+}
+  .Copyright div:first-child{width: 20%;}
+  .Copyright div:last-child{width: 80%;}
+
+.Copyright h4
+{
+font-family: 'Orbitron', sans-serif;
+}
+
+.Copyright p{
+font-family: 'Macondo', cursive;
+}
+
+/*Contact page css starts*/
+  section .mine_info .detail h2{
+    letter-spacing: 8px; margin-bottom: 1%;
+    font-family: 'Orbitron', sans-serif;
+  }
+
+  section .mine_info p{
+    letter-spacing: 2px;
+  }
+
+  section .mine_info{
+    height: 850px;
+  }
+
+  section .mine_info h3{
+  font-family: 'Josefin Slab', serif;
+  }
+
+  section {
+  font-family: 'Dancing Script', cursive;
+  }
