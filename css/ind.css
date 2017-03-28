@@ -123,7 +123,7 @@ text-align: center;
 
 footer{
   display:flex; flex-direction:row; justify-content: space-between;
-  background: linear-gradient(#cccccc, #FAFBFC); padding:2%;
+  background: linear-gradient(#cccccc, #FAFBFC); padding:3%;
 
 
 }
@@ -131,8 +131,8 @@ footer{
 .Call{
   display: flex;
 }
-.Call div:first-child{width: 20%;}
-.Call div:last-child{width:80%;}
+.Call div:first-child{width: 25%;}
+.Call div:last-child{width:75%;}
 
 
 .Call h4
@@ -149,8 +149,8 @@ footer div{width: 33%;}
 .Contact{
  display:flex;
  }
- .Contact div:first-child{width: 20%;}
- .Contact div:last-child{width: 80%;}
+ .Contact div:first-child{width: 25%;}
+ .Contact div:last-child{width: 75%;}
 
 .Contact h4
 {
@@ -165,8 +165,8 @@ font-family: 'Macondo', cursive;
 .Copyright{
   display:flex;
 }
-  .Copyright div:first-child{width: 20%;}
-  .Copyright div:last-child{width: 80%;}
+  .Copyright div:first-child{width: 25%;}
+  .Copyright div:last-child{width: 75%;}
 
 .Copyright h4
 {
