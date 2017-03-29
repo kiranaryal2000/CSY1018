@@ -37,6 +37,7 @@ li{
 
 }
 
+
 .mainhead{
   margin-left: 8%;
   margin-top:0.5%;
@@ -92,7 +93,7 @@ section{
 }
 
 section .indcont{
-  height:500px;
+margin-bottom:10px;
 }
 
 .minepic{
@@ -144,7 +145,7 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Macondo', cursive;
 }
 
-footer div{width: 33%;}
+footer div{width: 35%;}
 
 .Contact{
  display:flex;
@@ -177,24 +178,38 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Macondo', cursive;
 }
 
-/*Contact page css starts*/
-  section .mine_info .detail h2{
+/*Curriculum Vitae page css starts*/
+section .mine_info .detail h2{
     letter-spacing: 8px; margin-bottom: 1%;
     font-family: 'Orbitron', sans-serif;
   }
 
-  section .mine_info p{
+section .mine_info p{
     letter-spacing: 2px;
   }
 
-  section .mine_info{
-    height: 850px;
-  }
-
-  section .mine_info h3{
+section .mine_info h3{
   font-family: 'Josefin Slab', serif;
   }
 
-  section {
+section {
   font-family: 'Dancing Script', cursive;
   }
+
+/*Contact page css starts*/
+.contctpage{
+
+}
+
+/*Bio page css starts*/
+.biopage{
+
+}
+
+.secpic{
+  text-align: right;
+}
+
+.mybio p{
+
+}
