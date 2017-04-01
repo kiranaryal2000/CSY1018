@@ -104,10 +104,13 @@ margin-top: 1.5%;
 }
 
 /*Zooming slowly the pic when hovering and opacity increases*/
-.minepic img:hover{
+  .minepic img:hover{
   transition: all 2s ease-in-out 1s;
+  -webkit-transition: all 2s ease-in-out 1s;
   transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
   transition-delay: 0.2s;
+  -webkit-transition-delay: 0.2s;
   opacity: 1;
 }
 
