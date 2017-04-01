@@ -42,11 +42,11 @@ li{
   margin-left: 8%;
   margin-top:0.5%;
   padding:1%;
-  width: 50%;
+  width: 60%;
 }
 
 .mainhead h2{
-  letter-spacing: 6px; font-size: 3em;
+  letter-spacing: 5.5px; font-size: 2.8em;
   font-family: 'Orbitron', sans-serif;
 
 
@@ -63,6 +63,7 @@ font-family: 'Josefin Slab', serif;
   width:50%;
   margin-left: 50%;
 }
+
 
 ul{
   display:flex; flex-direction:row; justify-content: space-between;
@@ -92,18 +93,22 @@ section{
 
 }
 
-section .indcont{
-margin-bottom:10px;
-}
-
 .minepic{
-text-align: center ;
-margin-top: 3%;
+text-align: center;
+margin-top: 1.5%;
 }
 
-.minepic:hover{
-  ;
+.minepic img{
+  border-radius: 100%;
+  opacity: 0.9;
+}
 
+/*Zooming slowly the pic when hovering and opacity increases*/
+.minepic img:hover{
+  transition: all 2s ease-in-out 1s;
+  transform: scale(1.1, 1.1);
+  transition-delay: 0.2s;
+  opacity: 1;
 }
 
 .sechead{
@@ -118,7 +123,8 @@ text-align: center;
 .sechead p{
   text-align: center;
   margin-top: 0.5%;
-  font-family: 'Dancing Script', cursive
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 1%;
 
 }
 
@@ -145,7 +151,7 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Macondo', cursive;
 }
 
-footer div{width: 35%;}
+footer div{width: 33%;}
 
 .Contact{
  display:flex;
@@ -164,10 +170,10 @@ font-family: 'Macondo', cursive;
 
 
 .Copyright{
-  display:flex;
+  display:flex; flex-direction: row;
 }
-  .Copyright div:first-child{width: 25%;}
-  .Copyright div:last-child{width: 75%;}
+  .Copyright div:first-child{width:25%;}
+  .Copyright div:last-child{width:75%;}
 
 .Copyright h4
 {
@@ -177,6 +183,7 @@ font-family: 'Orbitron', sans-serif;
 .Copyright p{
 font-family: 'Macondo', cursive;
 }
+
 
 /*Curriculum Vitae page css starts*/
 section .mine_info .detail h2{
@@ -202,14 +209,18 @@ section {
 }
 
 /*Bio page css starts*/
-.biopage{
-
+.secpic{
+text-align: center;
 }
 
-.secpic{
-  text-align: right;
+.video{
+  text-align:center;
+}
+
+.mybio h3{
+  text-align: center; text-decoration: underline;
 }
 
 .mybio p{
-
+  text-align:center;
 }
