@@ -32,9 +32,13 @@ li{
   padding: 0.5%;
 }
 
-.logo:hover{
-  zoom:105%;
+.logo img{
+  border-radius: 100%;
+}
 
+.logo img:hover{
+  transform: scale(0.9);
+  opacity:0.9;
 }
 
 
@@ -64,6 +68,11 @@ font-family: 'Josefin Slab', serif;
   margin-left: 50%;
 }
 
+@media (max-width:1000px){
+  .navbar ul{
+    flex-direction: column;
+  }
+}
 
 ul{
   display:flex; flex-direction:row; justify-content: space-between;
@@ -72,8 +81,7 @@ ul{
 }
 
 ul li:hover{
-  transform: rotate(-10deg); /*When user hovers to items eg. C.V., Bio. etc, it rotates anti-clockwise 10degree*/
-  zoom:102%;
+  transform: rotate(-10deg) scale(1.1); /*When user hovers to items eg. C.V., Bio. etc, it rotates anti-clockwise 10degree and zooms*/
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px gray;
 
 }
@@ -86,16 +94,13 @@ a:active {
     color: #989898;
 }
 
-
-
 section{
   background: radial-gradient(#cccccc, #b2b2b2); padding:1%;
-
 }
 
 .minepic{
-text-align: center;
-margin-top: 1.5%;
+  text-align: center;
+  margin-top: 1.5%;
 }
 
 .minepic img{
@@ -141,17 +146,16 @@ footer{
 .Call{
   display: flex;
 }
-.Call div:first-child{width: 25%;}
-.Call div:last-child{width:75%;}
+  .Call div:first-child{width: 25%;}
+  .Call div:last-child{width:75%;}
 
 
-.Call h4
-{
-font-family: 'Orbitron', sans-serif;
+.Call h4{
+  font-family: 'Orbitron', sans-serif;
 }
 
 .Call p{
-font-family: 'Macondo', cursive;
+  font-family: 'Macondo', cursive;
 }
 
 footer div{width: 33%;}
@@ -190,13 +194,13 @@ font-family: 'Macondo', cursive;
 
 /*Curriculum Vitae page css starts*/
 section .mine_info .detail h2{
-    letter-spacing: 5px; margin-bottom: 1%;
-    font-family: 'Josefin Slab', serif;
+    letter-spacing: 3px; margin-bottom: 1%;
+    font-family: 'Orbitron', sans-serif;
 
   }
 
 section .mine_info p{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 
 section .mine_info h3{
@@ -230,7 +234,7 @@ section .mine_info .detail .cvcon{
 
 /*Contact page css starts*/
 .contctpage .form h3{
-  font-family: 'Josefin Slab', serif
+  font-family: 'Orbitron', sans-serif;
 }
 
 .contctpage .form button{
