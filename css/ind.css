@@ -68,9 +68,10 @@ font-family: 'Josefin Slab', serif;
   margin-left: 50%;
 }
 
-@media (max-width:1000px){
+@media (max-width:1000px){ /*Navigation bar responsive*/
   .navbar ul{
     flex-direction: column;
+    margin-left:-20%;
   }
 }
 
