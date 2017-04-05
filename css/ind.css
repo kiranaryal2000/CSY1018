@@ -17,7 +17,7 @@ header{
   padding: 1%;
   /*background-color: #FAFBFC;*/
   /*background: radial-gradient(#d4e4ef 0%, #86aecc 100%);*/
-  background-image: url("../images/header.png");
+  background-image: url("../images/header.jpg");
 }
 
 .navbar ul li a{
@@ -155,7 +155,7 @@ footer{
   display:flex; flex-direction:row; justify-content: space-between;
   /*background: linear-gradient(#cccccc, #FAFBFC); */
   /*background: radial-gradient(#d4e4ef 0%, #86aecc 100%);*/
-  background-image: url("../images/header.png");
+  background-image: url("../images/header.jpg");
   padding:3%;
 
 
