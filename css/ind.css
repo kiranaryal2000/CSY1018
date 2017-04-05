@@ -1,6 +1,8 @@
 /*Kiran Aryal 17421495*/
 body{
-  margin:0; background-color: #FEF9BD;
+  margin:0;
+  /*background-color: #FEF9BD;*/
+  background-image: url("../images/wall.jpg");
 }
 
 h1,h2,h3,h4,h5,h6,p{
@@ -12,7 +14,10 @@ h1,h2,h3,h4,h5,h6,p{
 }
 
 header{
-  padding: 1%; background-color: #FAFBFC;
+  padding: 1%;
+  /*background-color: #FAFBFC;*/
+  /*background: radial-gradient(#d4e4ef 0%, #86aecc 100%);*/
+  background-image: url("../images/header.png");
 }
 
 .navbar ul li a{
@@ -23,7 +28,6 @@ li{
   list-style:none; letter-spacing: 2px;
   display:block;
   font-family: 'Orbitron', sans-serif;
-
 }
 
 .logo{
@@ -53,7 +57,6 @@ li{
   letter-spacing: 5.5px; font-size: 2.8em;
   font-family: 'Orbitron', sans-serif;
 
-
 }
 
 .mainhead h4{
@@ -66,6 +69,7 @@ font-family: 'Josefin Slab', serif;
 .navbar{
   width:50%;
   margin-left: 50%;
+
 }
 
 @media (max-width:1000px){ /*Navigation bar responsive*/
@@ -77,13 +81,16 @@ font-family: 'Josefin Slab', serif;
 
 ul{
   display:flex; flex-direction:row; justify-content: space-between;
-  background-color: #FAFBFC;
+  /*background-color: #FAFBFC;*/
+  /*background-color: radial-gradient(#d4e4ef 0%, #86aecc 100%);*/
 
 }
 
 ul li:hover{
   transform: rotate(-10deg) scale(1.1); /*When user hovers to items eg. C.V., Bio. etc, it rotates anti-clockwise 10degree and zooms*/
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px gray;
+
+
 
 }
 
@@ -92,11 +99,15 @@ color:black;
 }
 
 a:active {
-    color: #989898;
+    color: lightblue;
 }
 
 section{
-  background: radial-gradient(#cccccc, #b2b2b2); padding:1%;
+  /*background: radial-gradient(#93cede 0%, #75bdd1 41%, #49a5bf 100%);*/
+  /*background: radial-gradient(#cccccc, #b2b2b2); */
+  background-image: url("../images/sec.jpg");
+
+  padding:1%;
 }
 
 .minepic{
@@ -105,8 +116,11 @@ section{
 }
 
 .minepic img{
-  border-radius: 100%;
-  opacity: 0.9;
+  border-radius:100%;
+  height:250px; width:240px;
+  opacity: 1;
+  border: 3px solid #F0F8FF;
+
 }
 
 /*Zooming slowly the pic when hovering and opacity increases*/
@@ -117,7 +131,7 @@ section{
   -webkit-transform: scale(1.1, 1.1);
   transition-delay: 0.2s;
   -webkit-transition-delay: 0.2s;
-  opacity: 1;
+  opacity: 0.95;
 }
 
 .sechead{
@@ -139,7 +153,10 @@ text-align: center;
 
 footer{
   display:flex; flex-direction:row; justify-content: space-between;
-  background: linear-gradient(#cccccc, #FAFBFC); padding:3%;
+  /*background: linear-gradient(#cccccc, #FAFBFC); */
+  /*background: radial-gradient(#d4e4ef 0%, #86aecc 100%);*/
+  background-image: url("../images/header.png");
+  padding:3%;
 
 
 }
@@ -246,6 +263,11 @@ section .mine_info .detail .cvcon{
   font-family: 'Josefin Slab', serif
 }
 
+.education table th, td{
+  padding: 10px;
+  border: 1px solid black;
+}
+
 /*Bio page css starts*/
 .secpic{
 margin-top: 1%;
@@ -256,7 +278,7 @@ margin-bottom: 1%;
 .secpic img{
   border-radius: 100%;
   height:300px; width:300px;
-  border: 2px solid black;
+  border: 3px solid #F0F8FF;
 }
 
 .mybio{
