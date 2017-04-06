@@ -20,6 +20,19 @@ header{
   background-image: url("../images/header.jpg");
 }
 
+.mylinks{
+  text-align: right;
+}
+
+.mylinks img{
+height: 15px; width:15px;
+transition: 0.5s;
+}
+
+.mylinks img:hover{
+transform: scale(1.5, 1.5);
+}
+
 .navbar ul li a{
   text-decoration:none;
 }
@@ -32,12 +45,13 @@ li{
 
 .logo{
   position:absolute;
-  margin-top: 0.5%;
+  margin-top: 1%;
   padding: 0.5%;
 }
 
 .logo img{
   border-radius: 100%;
+  transition: transform 0.5s;
 }
 
 .logo img:hover{
@@ -48,15 +62,34 @@ li{
 
 .mainhead{
   margin-left: 8%;
-  margin-top:0.5%;
-  padding:1%;
-  width: 60%;
+  padding:0.5%;
+  width: 50%;
 }
 
 .mainhead h2{
   letter-spacing: 5.5px; font-size: 2.8em;
   font-family: 'Orbitron', sans-serif;
 
+}
+
+@media (max-width:1300px){
+  .mainhead h2{
+    font-size: 1.8em;
+    margin-left:8%;
+    width:100%;
+  }
+}
+
+@media (max-width:1300px){
+  .mainhead h4{
+    margin-left:8%;
+  }
+}
+
+@media (max-width:1300px){
+  .logo img{
+    height: 60px; width:60px;
+  }
 }
 
 .mainhead h4{
@@ -72,10 +105,16 @@ font-family: 'Josefin Slab', serif;
 
 }
 
-@media (max-width:1000px){ /*Navigation bar responsive*/
+@media (max-width:1300px){ /*Navigation bar responsive*/
   .navbar ul{
     flex-direction: column;
     margin-left:-20%;
+  }
+}
+
+@media (max-width:1300px){ /*Navigation bar responsive*/
+  .navbar li{
+    margin-bottom: 3%;
   }
 }
 
@@ -86,8 +125,12 @@ ul{
 
 }
 
+ul li{
+  transition: transform 0.5s;
+}
+
 ul li:hover{
-  transform: rotate(-10deg) scale(1.1); /*When user hovers to items eg. C.V., Bio. etc, it rotates anti-clockwise 10degree and zooms*/
+  transform: scale(1.18); /*When user hovers to items eg. C.V., Bio. etc changes the scale*/
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px gray;
 
 
@@ -120,6 +163,7 @@ section{
   height:250px; width:240px;
   opacity: 1;
   border: 3px solid #F0F8FF;
+  transition: transform 4s;
 
 }
 
@@ -129,7 +173,7 @@ section{
   -webkit-transition: all 2s ease-in-out 1s;
   transform: scale(1.1, 1.1);
   -webkit-transform: scale(1.1, 1.1);
-  transition-delay: 0.2s;
+  transition-delay: 0.1s;
   -webkit-transition-delay: 0.2s;
   opacity: 0.95;
 }
@@ -209,6 +253,18 @@ font-family: 'Orbitron', sans-serif;
 font-family: 'Macondo', cursive;
 }
 
+@media (max-width:1200px){
+  footer{
+  flex-direction: column;
+  }
+}
+
+@media (max-width:1200px){
+  footer .Call, .Contact, .Copyright{
+    margin-left: 40%;
+    margin-bottom: 3%;
+  }
+}
 
 /*Curriculum Vitae page css starts*/
 section .mine_info .detail h2{
@@ -232,6 +288,17 @@ section .mine_info .detail .cvcon{
 
 .education{
   font-family: 'Josefin Slab', serif;
+}
+
+.education table th, td{
+  padding: 10px;
+  border: 1px solid black;
+}
+
+@media (max-width:1300px){
+  .education table th, td{
+    width:100%;
+  }
 }
 
 .Training{
@@ -263,9 +330,23 @@ section .mine_info .detail .cvcon{
   font-family: 'Josefin Slab', serif
 }
 
-.education table th, td{
-  padding: 10px;
-  border: 1px solid black;
+.contctpage{
+  display:flex; justify-content: space-between;
+
+}
+
+.contctpage .more_info{
+  font-family: 'Orbitron', sans-serif;
+}
+
+.more_info iframe{
+  width:400px; height:300px; border: 1px solid black;
+}
+
+@media (max-width:1380px){ /*Google Map changes from row to column*/
+  .contctpage{
+   flex-direction:column;
+  }
 }
 
 /*Bio page css starts*/
@@ -298,6 +379,12 @@ margin-bottom: 1%;
   width: 520px; height: 300px;
   border: 2px solid black;
   border-radius: 10px;
+}
+
+@media (max-width:1300px){
+  .video iframe{
+    width: 50%; height: 70%;
+  }
 }
 
 .mybio h3{
